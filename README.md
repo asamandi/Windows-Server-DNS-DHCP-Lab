@@ -43,6 +43,55 @@ DNS CNAME Record:
 - PC1 was configured with a DHCP reservation to always receive 192.168.10.50, while the general DHCP pool assigns addresses from 192.168.10.100 to 192.168.10.200.
 
 ----------------------------------------------------
+### Screenshots
+
+DC1 Static IP Configuration
+- 001-dc1-static-ip.png
+
+DNS Manager Open
+- 002-dns-manager-open.png
+
+Forward Lookup Zone
+- 003-forward-lookup-zone.png
+
+Reverse Lookup Zone Created
+- 004-reverse-lookup-zone-created-02.png
+
+DNS A Record Created
+- 005-dns-a-record-created-03.png
+
+DNS CNAME Record Created
+- 006-dns-cname-created-03.png
+
+DHCP Role Installed
+- 007-dhcp-role-installed-02.png
+
+DHCP Authorized
+- 008-dhcp-authorized.png
+
+DHCP Scope Created
+- 009-dhcp-scope-created.png
+
+DHCP Scope Options
+- 010-dhcp-scope-options.png
+
+PC1 DHCP IP Received
+- 011-pc1-dhcp-ip-received.png
+
+DHCP Lease Visible
+- 012-dhcp-lease-visible.png
+
+DHCP Reservation Created
+- 013-dhcp-reservation-created.png
+
+DNS Resolution Tests
+- 014-nslookup-tests-03.png
+
+Troubleshooting Proof
+- 015-troubleshooting-proof-02.png
+
+----------------------------------------------------
+
 ### Skills Demonstrated
 - Windows DNS management
 - Forward lookup zone verification
