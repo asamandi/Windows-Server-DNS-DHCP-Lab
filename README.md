@@ -39,7 +39,8 @@ DNS CNAME Record:
 - Exclusion Range: 192.168.10.100 - 192.168.10.109
 - DNS Server Option: 192.168.10.10
 - DNS Domain Option: amir.local
-- Reservation: PC1 → 192.168.10.50  
+- Reservation: PC1 → 192.168.10.50
+- PC1 was configured with a DHCP reservation to always receive 192.168.10.50, while the general DHCP pool assigns addresses from 192.168.10.100 to 192.168.10.200.
 
 ----------------------------------------------------
 ### Skills Demonstrated
