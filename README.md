@@ -121,7 +121,7 @@ DNS CNAME Record:
 ----------------------------------------------------
 ### Troubleshooting Notes
 
-#3## Issue:
+#### Issue:
 - PC1 does not receive a DHCP address.
 
 Cause:
