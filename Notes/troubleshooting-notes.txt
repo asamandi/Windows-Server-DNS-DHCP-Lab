@@ -1,0 +1,71 @@
+============================================================
+              WINDOWS DNS / DHCP LAB
+              TROUBLESHOOTING NOTES
+============================================================
+
+Problem:
+- PC1 does not receive a DHCP address.
+
+Most Likely Causes:
+- DHCP scope is not active.
+- DHCP server is not authorized.
+- PC1 is not configured to obtain an IP address automatically.
+- PC1 and DC1 are not connected to the same VirtualBox internal network.
+- DHCP Server service is stopped.
+
+Fix:
+- Confirm both VMs are connected to AD-Lab internal network.
+- Activate the DHCP scope.
+- Authorize DHCP in Active Directory.
+- Set PC1 IPv4 settings to obtain an IP automatically.
+- Run ipconfig /release and ipconfig /renew.
+
+------------------------------------------------------------
+
+Problem:
+- PC1 receives an IP address but cannot resolve amir.local.
+
+Most Likely Causes:
+- DHCP option 006 DNS Server is missing or incorrect.
+- PC1 is using the wrong DNS server.
+- DNS service is not running on DC1.
+
+Fix:
+- Set DHCP option 006 to 192.168.10.10.
+- Renew PC1 DHCP lease.
+- Verify ipconfig /all shows DNS server 192.168.10.10.
+- Test nslookup amir.local.
+
+------------------------------------------------------------
+
+Problem:
+- fileserver.amir.local does not resolve.
+
+Most Likely Causes:
+- DNS A record was not created.
+- Record was created in the wrong DNS zone.
+- PC1 has old DNS cache.
+
+Fix:
+- Create an A record in amir.local.
+- Verify the record in DNS Manager.
+- Run ipconfig /flushdns on PC1.
+- Test nslookup fileserver.amir.local.
+
+------------------------------------------------------------
+
+Problem:
+- DHCP reservation does not work.
+
+Most Likely Causes:
+- Wrong MAC address was entered.
+- PC1 still has old DHCP lease.
+- Reserved IP is outside the scope or conflicts with another device.
+
+Fix:
+- Check PC1 physical address using ipconfig /all.
+- Enter the correct MAC address in DHCP reservation.
+- Run ipconfig /release and ipconfig /renew.
+- Verify PC1 receives the reserved IP.
+
+============================================================

@@ -1,0 +1,31 @@
+============================================================
+              WINDOWS DNS / DHCP LAB
+              VERIFICATION COMMANDS
+============================================================
+
+On PC1:
+- ipconfig /all
+- ipconfig /release
+- ipconfig /renew
+- ipconfig /all
+- ping 192.168.10.10
+- ping dc1
+- nslookup amir.local
+- nslookup dc1.amir.local
+- nslookup fileserver.amir.local
+- nslookup files.amir.local
+- ping fileserver
+
+============================================================
+
+Expected Results:
+- PC1 receives an IP address from DHCP.
+- PC1 uses 192.168.10.10 as DNS server.
+- PC1 uses amir.local as DNS suffix.
+- DHCP server shows PC1 lease.
+- PC1 can resolve amir.local.
+- PC1 can resolve dc1.amir.local.
+- PC1 can resolve fileserver.amir.local.
+- CNAME record files.amir.local resolves to fileserver.amir.local.
+
+============================================================
