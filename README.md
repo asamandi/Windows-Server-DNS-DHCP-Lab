@@ -45,49 +45,49 @@ DNS CNAME Record:
 ----------------------------------------------------
 ### Screenshots
 
-DC1 Static IP Configuration
+#### DC1 Static IP Configuration
 - 001-dc1-static-ip.png
 
-DNS Manager Open
+#### DNS Manager Open
 - 002-dns-manager-open.png
 
-Forward Lookup Zone
+#### Forward Lookup Zone
 - 003-forward-lookup-zone.png
 
-Reverse Lookup Zone Created
+#### Reverse Lookup Zone Created
 - 004-reverse-lookup-zone-created-02.png
 
-DNS A Record Created
+#### DNS A Record Created
 - 005-dns-a-record-created-03.png
 
-DNS CNAME Record Created
+#### DNS CNAME Record Created
 - 006-dns-cname-created-03.png
 
-DHCP Role Installed
+#### DHCP Role Installed
 - 007-dhcp-role-installed-02.png
 
-DHCP Authorized
+#### DHCP Authorized
 - 008-dhcp-authorized.png
 
-DHCP Scope Created
+#### DHCP Scope Created
 - 009-dhcp-scope-created.png
 
-DHCP Scope Options
+#### DHCP Scope Options
 - 010-dhcp-scope-options.png
 
-PC1 DHCP IP Received
+#### PC1 DHCP IP Received
 - 011-pc1-dhcp-ip-received.png
 
-DHCP Lease Visible
+#### DHCP Lease Visible
 - 012-dhcp-lease-visible.png
 
-DHCP Reservation Created
+#### DHCP Reservation Created
 - 013-dhcp-reservation-created.png
 
-DNS Resolution Tests
+#### DNS Resolution Tests
 - 014-nslookup-tests-03.png
 
-Troubleshooting Proof
+#### Troubleshooting Proof
 - 015-troubleshooting-proof-02.png
 
 ----------------------------------------------------
