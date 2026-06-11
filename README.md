@@ -57,7 +57,7 @@ DNS CNAME Record:
 #### Reverse Lookup Zone Created
 - 004-reverse-lookup-zone-created-02.png
 
-### DNS A Record Created
+#### DNS A Record Created
 - 005-dns-a-record-created-03.png
 
 #### DNS CNAME Record Created
