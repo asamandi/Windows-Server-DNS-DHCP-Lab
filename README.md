@@ -1,11 +1,11 @@
-## Windows Server DNS and DHCP Lab
+# Windows Server DNS and DHCP Lab
 
-### Overview
+## Overview
 - This lab demonstrates Windows Server DNS and DHCP configuration in an Active Directory domain environment.
 - The goal of this lab was to configure DNS records, create a DHCP scope, assign IP addresses automatically to a Windows client, configure a DHCP reservation, and verify hostname resolution using Command Prompt tools.
 
 ----------------------------------------------------
-### Lab Environment
+## Lab Environment
 - Server Name: DC1
 - Server OS: Windows Server 2022
 - Client Name: PC1
@@ -14,7 +14,7 @@
 - Network: VirtualBox Internal Network - AD-Lab  
 
 ----------------------------------------------------
-### IP Addressing
+## IP Addressing
 - DC1 Static IP: 192.168.10.10
 - DHCP Scope Range: 192.168.10.100 - 192.168.10.200
 - Reserved IP for PC1: 192.168.10.50
@@ -22,7 +22,7 @@
 - DNS Server: 192.168.10.10  
 
 ----------------------------------------------------
-### DNS Configuration
+## DNS Configuration
 - Forward Lookup Zone: amir.local
 - Reverse Lookup Zone: 192.168.10.0/24  
 
@@ -33,7 +33,7 @@ DNS CNAME Record:
 - files.amir.local → fileserver.amir.local  
 
 ----------------------------------------------------
-### DHCP Configuration
+## DHCP Configuration
 - Scope Name: AD-Lab-Scope
 - Scope Range: 192.168.10.100 - 192.168.10.200
 - Exclusion Range: 192.168.10.100 - 192.168.10.109
@@ -43,56 +43,56 @@ DNS CNAME Record:
 - PC1 was configured with a DHCP reservation to always receive 192.168.10.50, while the general DHCP pool assigns addresses from 192.168.10.100 to 192.168.10.200.
 
 ----------------------------------------------------
-### Screenshots
+## Screenshots
 
-#### DC1 Static IP Configuration
+### DC1 Static IP Configuration
 - 001-dc1-static-ip.png
 
-#### DNS Manager Open
+### DNS Manager Open
 - 002-dns-manager-open.png
 
-#### Forward Lookup Zone
+### Forward Lookup Zone
 - 003-forward-lookup-zone.png
 
-#### Reverse Lookup Zone Created
+### Reverse Lookup Zone Created
 - 004-reverse-lookup-zone-created-02.png
 
-#### DNS A Record Created
+### DNS A Record Created
 - 005-dns-a-record-created-03.png
 
-#### DNS CNAME Record Created
+### DNS CNAME Record Created
 - 006-dns-cname-created-03.png
 
-#### DHCP Role Installed
+### DHCP Role Installed
 - 007-dhcp-role-installed-02.png
 
-#### DHCP Authorized
+### DHCP Authorized
 - 008-dhcp-authorized.png
 
-#### DHCP Scope Created
+### DHCP Scope Created
 - 009-dhcp-scope-created.png
 
-#### DHCP Scope Options
+### DHCP Scope Options
 - 010-dhcp-scope-options.png
 
-#### PC1 DHCP IP Received
+### PC1 DHCP IP Received
 - 011-pc1-dhcp-ip-received.png
 
-#### DHCP Lease Visible
+### DHCP Lease Visible
 - 012-dhcp-lease-visible.png
 
-#### DHCP Reservation Created
+### DHCP Reservation Created
 - 013-dhcp-reservation-created.png
 
-#### DNS Resolution Tests
+### DNS Resolution Tests
 - 014-nslookup-tests-03.png
 
-#### Troubleshooting Proof
+### Troubleshooting Proof
 - 015-troubleshooting-proof-02.png
 
 ----------------------------------------------------
 
-### Skills Demonstrated
+## Skills Demonstrated
 - Windows DNS management
 - Forward lookup zone verification
 - Reverse lookup zone creation
@@ -108,7 +108,7 @@ DNS CNAME Record:
 - Hostname resolution troubleshooting  
 
 ----------------------------------------------------
-### Verification Commands
+## Verification Commands
 - ipconfig /all
 - ipconfig /release
 - ipconfig /renew
@@ -119,7 +119,7 @@ DNS CNAME Record:
 - nslookup files.amir.local  
 
 ----------------------------------------------------
-### Troubleshooting Notes
+## Troubleshooting Notes
 
 ### Issue:
 - PC1 does not receive a DHCP address.
@@ -149,6 +149,6 @@ Fix:
 - Verify the record in DNS Manager and run ipconfig /flushdns on PC1.
 
 ----------------------------------------------------
-### Final Result
+## Final Result
 - Windows DHCP successfully assigned an IP address to PC1. DHCP scope options provided the correct DNS server and domain name. A DHCP reservation was configured for PC1. DNS A and CNAME records were created and tested successfully using nslookup.
 - This lab demonstrates practical Windows Server DNS, DHCP, client IP assignment, hostname resolution, and troubleshooting skills.
